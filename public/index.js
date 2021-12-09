@@ -1,5 +1,4 @@
 // Creating the peer
-//leijunhao
 const peer = new RTCPeerConnection({
   iceServers: [
     {
