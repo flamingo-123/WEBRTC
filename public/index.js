@@ -1,5 +1,5 @@
 // Creating the peer
-// 分支创建
+// 主分支创建
 const peer = new RTCPeerConnection({
   iceServers: [
     {
