@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, "PingFang SC", "Microsoft Yahei", sans-serif;
+}
+
+.Home{
+	width:   100%;
+    height:  100%;		
+    background: violet;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.Home > div{
+    width:   600px;
+    height:  700px;
+    background-color: #8bc34a;
+    margin: 10px;
+}
+
+.Home .context{
+    width:   900px;
+    height:  700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.Home .context > div {
+    width: 400px;
+    height: 400px;
+    background-color: #fff232;
+    margin: 10px;
+}
+.Home .context .Friends{
+width: 900px;
+background: chocolate;
+height: 200px;
+position: absolute;
+bottom: 3px;
+}
+.Home .aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    align-items: center;
+}
+
+.Home .aside .chat{
+    width: 600px;
+    height: 500px;
+    background-color: red;
+    position: relative;
+    
+}
+.Home .aside .bottom{
+    width: 600px;
+    height: 100px;
+    background-color: blue;
+    margin: 10px;
+}
+.Home .aside .model{
+    width: 600px;
+    height: 50px;
+    background-color: pink;
+  
+}
+.Home .aside .chat .chat-page{
+position:absolute;
+bottom: 0px;
+}
+ #localVideo {
+    width: 400px;
+    height: 400px;
+}
+#remoteVideo {
+    width: 400px;
+    height: 400px;
+}
+
+
+
+
+/* 视频底部栏 */
+#call {
+    display: inline-flex;
+    background: linear-gradient(214.84deg, rgb(15, 9, 68) 20.52%, rgb(9, 4, 50) 89.43%);
+    transition: background 1s;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: white;
+  }
+  
+  #call:hover {
+    background: linear-gradient(90deg, rgb(110, 42, 255) 0%, rgb(148, 98, 255) 100%);
+  }
+
+  .user-item {
+    display: inline-flex;
+    cursor: pointer;
+    background: transparent;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transition: background 1s;
+    border: 1px solid rgb(110, 42, 255);
+  }
+  
+  .user-item:hover {
+    background: rgb(110, 42, 255);
+  }
+  
+  .user-item--touched {
+    background: linear-gradient(90deg, rgb(110, 42, 255) 0%, rgb(148, 98, 255) 100%);
+  }

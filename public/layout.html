@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/layout/css.css" />
+    <link rel="stylesheet" href="../public/layout/chat.css" />
+    
+</head>
+<body>
+    <div class="Home">
+    <div class="aside"> 
+        <div class="chat">
+            <div class="chat-page">
+                <ul id="messages"></ul>
+                <form id="form" action="">
+                <input id="input" autocomplete="off" /><button>Send</button>
+               </form>
+            </div>
+        </div>
+        <div class="model">
+            <button id="capture">屏幕分享</button>
+            <button id="record">屏幕录制</button>
+            <button id="filmRoom">创建放映室</button>
+            <button id="meeting">创建会议室</button>
+            <button id="open-camera">开启摄像头</button>
+            <button id="close-camera">关闭摄像头</button>
+
+        </div>
+        
+    </div>
+
+        <div class="context">
+            <div class="local-video">
+                <video id="localVideo" playsinline autoplay muted>本地视频</video>
+            </div>
+         <div class="remote-video">
+             <video id="remoteVideo" playsinline autoplay>远程视频</video>
+         </div>
+         
+         <div class="Friends">
+            <div>
+                朋友:
+            </div>
+            <div id="usersList">
+               无用户连接
+            </div>
+            <div>
+                <div id="call">呼叫</button>
+            </div>
+        </div>
+     </div>
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+    <script src="index.js"></script>
+    <script src="chat.js"></script>
+    <script src="record.js"></script>
+</body>
+</html>
